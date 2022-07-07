@@ -1,0 +1,23 @@
+CRITICAL - 2022-07-07 00:27:24 --> Invalid file: pengguna/v_dpengguna.php
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengguna/v_dpen...')
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('pengguna/v_dpen...', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(7): view('pengguna/v_dpen...')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->index()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-07 00:28:09 --> Undefined variable: title
+#0 C:\xampp\htdocs\tiketkapal\app\Views\layout\template.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\View\View.php(226): CodeIgniter\View\View->render('layout/template', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('pengguna/v_dpen...', Array, true)
+#5 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(7): view('pengguna/v_dpen...')
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->index()
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#8 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}

@@ -1,0 +1,16 @@
+CRITICAL - 2022-07-06 22:18:29 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\tiketkapal\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Pengguna')
+#1 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Pengguna')
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-06 22:19:16 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\tiketkapal\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Pengguna')
+#1 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Pengguna')
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
