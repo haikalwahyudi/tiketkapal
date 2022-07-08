@@ -72,6 +72,11 @@
     <script src="<?= base_url(); ?>/template/js/dashboard.js"></script>
     <script src="<?= base_url(); ?>/template/js/Chart.roundedBarCharts.js"></script>
     <!-- End custom js for this page-->
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            $(.data).DataTable();
+        });
+    </script> -->
 </body>
 
 </html>
