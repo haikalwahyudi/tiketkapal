@@ -1,0 +1,94 @@
+ERROR - 2022-07-11 04:34:25 --> Error connecting to the database: Unknown database 'tiketkapal'
+CRITICAL - 2022-07-11 04:34:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tiketkapal'
+#0 C:\xampp\htdocs\tiketkapal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\tiketkapal\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\tiketkapal\app\Models\M_pengguna.php(13): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(18): App\Models\M_pengguna->ambilData()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->index()
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-07-11 04:36:12 --> Table 'tiketkapal.pengguna' doesn't exist
+CRITICAL - 2022-07-11 04:36:12 --> Table 'tiketkapal.pengguna' doesn't exist
+#0 C:\xampp\htdocs\tiketkapal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tiketkapal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tiketkapal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tiketkapal\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tiketkapal\app\Models\M_pengguna.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(18): App\Models\M_pengguna->ambilData()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->index()
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#8 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-07-11 04:37:10 --> Table 'tiketkapal.pengguna' doesn't exist
+CRITICAL - 2022-07-11 04:37:10 --> Table 'tiketkapal.pengguna' doesn't exist
+#0 C:\xampp\htdocs\tiketkapal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tiketkapal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tiketkapal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tiketkapal\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tiketkapal\app\Models\M_pengguna.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(18): App\Models\M_pengguna->ambilData()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->index()
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#8 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-07-11 04:53:40 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::insert() must be of the type array or null, object given, called in C:\xampp\htdocs\tiketkapal\app\Models\M_pengguna.php on line 22
+#0 C:\xampp\htdocs\tiketkapal\app\Models\M_pengguna.php(22): CodeIgniter\Database\BaseBuilder->insert(Object(CodeIgniter\Database\MySQLi\Builder))
+#1 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(38): App\Models\M_pengguna->simpan(Array)
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->tpenggunaAksi()
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-07-11 04:54:52 --> Column 'level' cannot be null
+CRITICAL - 2022-07-11 04:54:52 --> Column 'level' cannot be null
+#0 C:\xampp\htdocs\tiketkapal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\tiketkapal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\tiketkapal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\tiketkapal\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\tiketkapal\app\Models\M_pengguna.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(38): App\Models\M_pengguna->simpan(Array)
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->tpenggunaAksi()
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#8 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-07-11 05:06:16 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('pengguna/v_tpen...', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(28): view('pengguna/v_tpen...', Array)
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->tpengguna()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-11 05:40:36 --> Illegal offset type
+#0 C:\xampp\htdocs\tiketkapal\system\Database\BaseBuilder.php(665): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset ...', 'C:\\xampp\\htdocs...', 665, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\Database\BaseBuilder.php(631): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', Object(CodeIgniter\Database\MySQLi\Builder), NULL, 'AND ', NULL)
+#2 C:\xampp\htdocs\tiketkapal\system\Database\BaseBuilder.php(2196): CodeIgniter\Database\BaseBuilder->where(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 C:\xampp\htdocs\tiketkapal\app\Models\M_pengguna.php(28): CodeIgniter\Database\BaseBuilder->delete(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Pengguna.php(52): App\Models\M_pengguna->hapus('4')
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pengguna->hpengguna('4')
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-11 06:01:51 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\xampp\htdocs\tiketkapal\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Pengguna/upengg...')
+#1 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Pengguna/upengg...')
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
