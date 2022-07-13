@@ -9,4 +9,9 @@ class Home extends BaseController
         $data['title'] = "SIPTIKA";
         return view('v_beranda', $data);
     }
+
+    public function landingpage()
+    {
+    	return view('landingpage');
+    }
 }

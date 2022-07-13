@@ -1,0 +1,129 @@
+CRITICAL - 2022-07-13 00:31:14 --> Invalid file: v_login.php
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('v_login', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Login.php(9): view('v_login')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-13 00:31:33 --> Invalid file: /loginv_login.php
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/loginv_login.p...')
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/loginv_login', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Login.php(9): view('/loginv_login')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-13 00:31:34 --> Invalid file: /loginv_login.php
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/loginv_login.p...')
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/loginv_login', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Login.php(9): view('/loginv_login')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-13 00:31:34 --> Invalid file: /loginv_login.php
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/loginv_login.p...')
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/loginv_login', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Login.php(9): view('/loginv_login')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-13 01:08:29 --> Undefined property: App\Controllers\Login::$M_pengguna
+#0 C:\xampp\htdocs\tiketkapal\app\Controllers\Login.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Login->daftarAksi()
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-13 01:27:36 --> Cannot declare class App\Models\M_pengguna, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-13 01:28:15 --> Cannot declare class App\Models\M_pengguna, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-13 01:28:16 --> Cannot declare class App\Models\M_pengguna, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-13 01:28:16 --> Cannot declare class App\Models\M_pengguna, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-13 01:28:17 --> Cannot declare class App\Models\M_pengguna, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-13 01:28:17 --> Cannot declare class App\Models\M_pengguna, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-13 01:36:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+#0 C:\xampp\htdocs\tiketkapal\app\Controllers\Login.php(44): App\Models\M_login->cekData(NULL)
+#1 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Login->cekLogin()
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-13 01:36:59 --> syntax error, unexpected 'get' (T_STRING), expecting ';'
+#0 C:\xampp\htdocs\tiketkapal\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\tiketkapal\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_lo...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_lo...')
+#3 C:\xampp\htdocs\tiketkapal\app\Controllers\Login.php(16): spl_autoload_call('App\\Models\\M_lo...')
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(809): App\Controllers\Login->__construct()
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-07-13 01:39:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+#0 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Login->cekLogin()
+#1 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-13 01:45:15 --> Call to a member function getRow() on null
+#0 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Login->cekLogin()
+#1 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-13 02:22:55 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('landingpage', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Home.php(15): view('landingpage')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Home->landingpage()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-13 02:23:28 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('landingpage', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Home.php(15): view('landingpage')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Home->landingpage()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-13 02:23:29 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('landingpage', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Home.php(15): view('landingpage')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Home->landingpage()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
