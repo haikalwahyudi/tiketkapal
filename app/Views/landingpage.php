@@ -54,13 +54,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#overview" class="nav-item nav-link">Overview</a>
+                        <a href="#home" class="nav-item nav-link active">Beranda</a>
+                        <a href="#" class="nav-item nav-link">Dashboard</a>
+                        <a href="<?= base_url() ?>/error" class="nav-item nav-link">Pesan Tiket</a>
+                        <a href="#" class="nav-item nav-link">Kapal</a>
+                        <!-- <a href="#about" class="nav-item nav-link">About</a> -->
+                        <!-- <a href="#overview" class="nav-item nav-link">Overview</a>
                         <a href="#features" class="nav-item nav-link">Features</a>
-                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
-                        <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="#pricing" class="nav-item nav-link">Pricing</a> -->
+                        <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
+                        <a href="#contact" class="nav-item nav-link">Kontak</a>
                     </div>
                     <?php if(session()->get('log_in') == true){ ?>
                         <a href="<?= base_url(); ?>/Login/logout" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Keluar</a>
