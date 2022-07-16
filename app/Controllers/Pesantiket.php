@@ -11,4 +11,8 @@ class Pesantiket extends BaseController
         ];
         return view('pesantiket/v_dpesantiket', $data);
     }
+    public function tes()
+    {
+        return view('pesantiket/tes');
+    }
 }

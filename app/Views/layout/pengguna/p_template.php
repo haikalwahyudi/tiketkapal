@@ -26,27 +26,20 @@
     <div class="container-scroller">
 
         <!-- Navbar / Header -->
-        <?= $this->include('/layout/header'); ?>
+        <?= $this->include('/layout/pengguna/p_header'); ?>
         <!-- And Navbar / Header -->
+<div class="content-wrapper">
+        <div class="container">
+            
 
-        <div class="container-fluid page-body-wrapper">
-            <!-- SideBar -->
-            <?= $this->include('/layout/sidebar'); ?>
-            <!-- And SideBar -->
-
-            <div class="main-panel">
 
                 <!-- Content -->
                 <?= $this->renderSection('isi'); ?>
                 <!-- And Content -->
-
-                <!-- Footer -->
-                <?= $this->include('/layout/footer'); ?>
-                <!-- And Footer -->
-
-            </div> <!-- main-panel ends -->
-
+            </div>
         </div>
+        <!-- Footer -->
+                <?= $this->include('/layout/pengguna/p_footer'); ?>
         <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
