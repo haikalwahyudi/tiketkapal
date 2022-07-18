@@ -26,7 +26,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="<?= base_url(); ?>/error"">
+            <a class="nav-link" href="<?= base_url(); ?>/rekening"">
                 <i class=" ti-credit-card menu-icon"></i>
                 <span class="menu-title">Rekening Pembayaran</span>
             </a>
