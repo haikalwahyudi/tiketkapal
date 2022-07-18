@@ -56,7 +56,7 @@
                     <div class="navbar-nav mx-auto py-0">
                         <a href="#home" class="nav-item nav-link active">Beranda</a>
                         <a href="#" class="nav-item nav-link">Dashboard</a>
-                        <a href="<?= base_url() ?>/error" class="nav-item nav-link">Pesan Tiket</a>
+                        <a href="<?= base_url() ?>/pesantiket" class="nav-item nav-link">Pesan Tiket</a>
                         <a href="#" class="nav-item nav-link">Kapal</a>
                         <!-- <a href="#about" class="nav-item nav-link">About</a> -->
                         <!-- <a href="#overview" class="nav-item nav-link">Overview</a>

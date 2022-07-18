@@ -27,6 +27,12 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url(); ?>/error"">
+                <i class=" ti-credit-card menu-icon"></i>
+                <span class="menu-title">Rekening Pembayaran</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url(); ?>/error"">
                 <i class=" ti-agenda menu-icon"></i>
                 <span class="menu-title">Laporan</span>
             </a>

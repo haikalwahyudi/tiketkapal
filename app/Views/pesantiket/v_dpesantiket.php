@@ -80,32 +80,77 @@
                           <label>Comments</label>
                           <textarea class="form-control" rows="3"></textarea>
                         </div> -->
-                  <div class="mt-4">
-                    <div class="accordion" id="accordion" role="tablist">
-                      <div class="card">
-                        <div class="card-header" role="tab" id="heading-2">
-                          <h6 class="mb-0">
-                            <a class="collapsed" data-bs-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                              Bank
-                            </a>
-                          </h6>
-                        </div>
-                        <div id="collapse-2" class="collapse" role="tabpanel" aria-labelledby="heading-2" data-parent="#accordion">
-                          <div class="card-body">
-                              <p>If while signing in to your account you see an error message, you can do the following</p>
-                            <ol class="ps-3 mt-4">
-                              <li>Check your network connection and try again</li>
-                              <li>Make sure your account credentials are correct while signing in</li>
-                              <li>Check whether your account is accessible in your region</li>
-                            </ol>
-                            <br>
-                            <p class="text-success">
-                              <i class="ti-alert-octagon me-2"></i>If the problem persists, you can contact our support.
-                            </p>
+                        <div class="form-group">
+                          <label class="col-sm-6 col-form-label">Bank</label>
+                          <div class="col-sm-3">
+                            <div class="form-check form-check-secondary">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="pembayaran" id="membershipRadios1" value="BRI" checked>
+                                BRI
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-check form-check-secondary">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="pembayaran" id="membershipRadios2" value="BNI">
+                                BNI
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-check form-check-secondary">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="pembayaran" id="membershipRadios2" value="NTB">
+                                NTB
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-check form-check-secondary">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="pembayaran" id="membershipRadios2" value="MANDIRI">
+                                MANDIRI
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-check form-check-secondary">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="pembayaran" id="membershipRadios2" value="BCA">
+                                BCA
+                              </label>
+                            </div>
                           </div>
                         </div>
-                      </div> 
-                  </div>
+
+                        <div class="form-group">
+                          <label class="col-sm-6 col-form-label">E-Wallet</label>
+                          <div class="col-sm-3">
+                            <div class="form-check form-check-secondary">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="pembayaran" id="membershipRadios1" value="OVO">
+                                OVO
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-check form-check-secondary">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="pembayaran" id="membershipRadios2" value="DANA">
+                                DANA
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="form-check form-check-secondary">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="pembayaran" id="membershipRadios2" value="LINK AJA">
+                                LINK AJA
+                              </label>
+                            </div>
+                          </div>
+                        </div>
                       </section>
 
                       <!-- <h3>Finish</h3>
