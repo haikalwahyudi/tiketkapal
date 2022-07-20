@@ -44,7 +44,7 @@
                   <input type="email" class="form-control form-control-lg" name="email" id="exampleInputEmail1" required placeholder="Masukkan Email">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" name="password" id="exampleInputPassword1" required placeholder="Password">
+                  <input type="password" class="form-control form-control-lg" name="password" required placeholder="Password">
                 </div>
                 <div class="mt-3">
                   <button class="btn btn-primary btn-lg font-weight-medium auth-form-btn">Masuk</button>

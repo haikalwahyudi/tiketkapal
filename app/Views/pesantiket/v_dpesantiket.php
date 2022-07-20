@@ -6,7 +6,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Pemesanan Tiket Kapal</h4>
-                  <form id="example-form" action="#">
+                  <!-- <form id="example-form" action="#"> -->
                     <div>
                       <h3>Data Diri</h3>
                       <section>
@@ -58,18 +58,46 @@
 
                       <h3>Jenis Kendaraan</h3>
                       <section>
-                        <h3>Profile</h3>
+                        <h3>A. Penumpang</h3>
                         <div class="form-group">
-                          <label>First name</label>
-                          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter first name">
+                          <div class="col-xs-4">
+                            <label for="ex1">Dewasa</label>
+                          <input type="number" class="form-control">
+                          </div>
                         </div>
                         <div class="form-group">
-                          <label>Last name</label>
-                          <input type="password" class="form-control" placeholder="Last name">
+                          <label>Bayi</label>
+                          <input type="number" class="form-control">
                         </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h3>B. Kendaraan</h3>
                         <div class="form-group">
-                          <label>Profession</label>
-                          <input type="password" class="form-control" placeholder="Profession">
+                          <label>Pilih Jenis Kendaraan</label>
+                          <select name="kendaraan" class="form-control">
+                            <option>-Pilih Jenis Kendaraan-</option>
+                            <option value="Golongan I">Golongan I</option>
+                            <option value="Golongan II">Golongan II</option>
+                            <option value="Golongan III">Golongan III</option>
+                            <option value="Golongan IV">Golongan IV</option>
+                            <option value="Golongan V">Golongan V</option>
+                            <option value="Golongan VI">Golongan VI</option>
+                            <option value="Golongan VII">Golongan VII</option>
+                            <option value="Golongan VIII">Golongan VIII</option>
+                            <option value="Golongan IX">Golongan IX</option>
+                          </select>
+                        </div>
+                          </div>
+                          <div class="col-md-6">
+                            <h3>Keterangan : </h3>
+                            <ol>
+                              <li>tes</li>
+                              <li>tes</li>
+                              <li>tes</li>
+                              <li>tes</li>
+                            </ol>
+                          </div> 
                         </div>
                       </section>
 
