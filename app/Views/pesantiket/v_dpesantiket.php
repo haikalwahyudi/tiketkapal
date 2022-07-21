@@ -75,7 +75,7 @@
                             <h3>B. Kendaraan</h3>
                         <div class="form-group">
                           <label>Pilih Jenis Kendaraan</label>
-                          <select name="kendaraan" class="form-control">
+                          <select name="kendaraan" class="form-control" onchange="harga(this.value)">
                             <option>-Pilih Jenis Kendaraan-</option>
                             <option value="Golongan I">Golongan I</option>
                             <option value="Golongan II">Golongan II</option>
@@ -87,15 +87,40 @@
                             <option value="Golongan VIII">Golongan VIII</option>
                             <option value="Golongan IX">Golongan IX</option>
                           </select>
+                          <small id="keterangan" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group" id="jenis">
+                          <small id="keterangan2" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" name="biaya">
                         </div>
                           </div>
                           <div class="col-md-6">
                             <h3>Keterangan : </h3>
-                            <ol>
-                              <li>tes</li>
-                              <li>tes</li>
-                              <li>tes</li>
-                              <li>tes</li>
+                            <ol type="A">
+                              <strong><li>Penumpang</li></strong>
+                              <ol>
+                                <li>Dewasa (Usia > 2 Tahun <strong>Rp18.000</strong>/orang)</li>
+                                <li>Bayi (Usia 0 - 2 Tahun <strong>Rp5.200</strong>/orang)</li>
+                              </ol>
+                              <strong><li>Kendaraan</li></strong>
+                              <ol>
+                                <li>Golongan I (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan II (Sepeda Motor < 500 cc <strong>Rp67.500</strong>/unit)</li>
+                                <li>Golongan III (Sepeda Motor >500 cc <strong>Rp110.750</strong>/unit)</li>
+                                <li>Golongan IV 
+                                  <ol type="a">
+                                    <li>Kendaraan Penumpang (Panjang s/d 5 m <strong>Rp500.755</strong>/unit)</li>
+                                    <li>Kendaraan Barang (Panjang s/d 5 m <strong>Rp468.741</strong>/unit)</li>
+                                  </ol>
+                                </li>
+                                <li>Golongan V (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan VI (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan VII (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan VIII (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan IX (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                              </ol>
                             </ol>
                           </div> 
                         </div>

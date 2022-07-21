@@ -43,7 +43,7 @@
         <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-
+    <script src="<?= base_url(); ?>/js/script.js"></script>
     <!-- plugins:js -->
     <script src="<?= base_url(); ?>/template/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
