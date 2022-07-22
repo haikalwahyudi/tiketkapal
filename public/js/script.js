@@ -1,3 +1,21 @@
+function hitung()
+{
+	let dewasa = document.getElementById('dewasa').value;
+	let bayi = document.getElementById('bayi').value;
+	let hasil1 = parseInt(dewasa) * 18000;
+	let hasil2 = parseInt(bayi) * 5200;
+	// let hasil = hasil1;
+	if(!isNaN(hasil1)) {
+	document.getElementById('bayar').innerHTML = hasil1;
+	}else if (!isNaN(hasil2)){
+	document.getElementById('bayar').innerHTML = hasil2;
+	}else if(!isNaN(hasil1) & !isNaN(hasil2)){
+	document.getElementById('bayar').innerHTML = hasil1 + hasil2;
+	}else{
+	document.getElementById('bayar').innerHTML = '0';
+}
+}
+
 function harga(kendaraan)
 {
 	let data = "";

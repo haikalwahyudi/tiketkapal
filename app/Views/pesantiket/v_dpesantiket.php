@@ -13,7 +13,7 @@
                         <h3>Masukkan Data Diri Anda</h3>
                         <div class="form-group">
                           <label>Nama</label>
-                          <input type="text" class="form-control" placeholder="Masukkan Nama">
+                          <input type="text" class="form-control" placeholder="Masukkan Nama" required>
                         </div>
                         <div class="form-group">
                           <label class="col-sm-6 col-form-label">Jenis Kelamin</label>
@@ -36,23 +36,23 @@
                         </div>
                         <div class="form-group">
                           <label>Tempat Lahir</label>
-                          <input type="text" class="form-control" placeholder="Masukkan Tempat Lahir">
+                          <input type="text" class="form-control" placeholder="Masukkan Tempat Lahir" required>
                         </div>
                         <div class="form-group">
                           <label>Tanggal Lahir</label>
-                          <input type="date" class="form-control" placeholder="Masukkan Tanggal Lahir">
+                          <input type="date" class="form-control" placeholder="Masukkan Tanggal Lahir" required>
                         </div>
                         <div class="form-group">
                           <label>NIK</label>
-                          <input type="number" class="form-control" placeholder="Masukkan NIK Anda">
+                          <input type="number" class="form-control" placeholder="Masukkan NIK Anda" required>
                         </div>
                         <div class="form-group">
                           <label>No Hp</label>
-                          <input type="number" class="form-control" placeholder="Masukkan Nomor Handphone">
+                          <input type="number" class="form-control" placeholder="Masukkan Nomor Handphone" required>
                         </div>
                         <div class="form-group">
                           <label>Alamat</label>
-                          <textarea class="form-control" rows="5" placeholder="Masukkan Alamat Anda"></textarea>
+                          <textarea class="form-control" rows="5" placeholder="Masukkan Alamat Anda" required></textarea>
                         </div>
                       </section>
 
@@ -62,12 +62,12 @@
                         <div class="form-group">
                           <div class="col-xs-4">
                             <label for="ex1">Dewasa</label>
-                          <input type="number" class="form-control">
+                          <input type="number" class="form-control" id="dewasa" onkeyup="hitung();" min="0" required>
                           </div>
                         </div>
                         <div class="form-group">
                           <label>Bayi</label>
-                          <input type="number" class="form-control">
+                          <input type="number" class="form-control" id="bayi" onkeyup="hitung();" min="0" required>
                         </div>
 
                         <div class="row">
@@ -75,7 +75,7 @@
                             <h3>B. Kendaraan</h3>
                         <div class="form-group">
                           <label>Pilih Jenis Kendaraan</label>
-                          <select name="kendaraan" class="form-control" onchange="harga(this.value)">
+                          <select name="kendaraan" class="form-control" onchange="harga(this.value)" required>
                             <option>-Pilih Jenis Kendaraan-</option>
                             <option value="Golongan I">Golongan I</option>
                             <option value="Golongan II">Golongan II</option>
@@ -93,8 +93,9 @@
                           <small id="keterangan2" class="form-text text-muted"></small>
                         </div>
                         <div class="form-group">
-                          <input type="text" name="biaya">
+                          <input type="text" name="biaya" id="biaya">
                         </div>
+                        <h3>Total Bayar : <span id="bayar"></span></h3>
                           </div>
                           <div class="col-md-6">
                             <h3>Keterangan : </h3>
