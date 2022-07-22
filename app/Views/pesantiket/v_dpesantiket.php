@@ -6,14 +6,14 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Pemesanan Tiket Kapal</h4>
-                  <form id="example-form" action="#">
+                  <!-- <form id="example-form" action="#"> -->
                     <div>
                       <h3>Data Diri</h3>
                       <section>
                         <h3>Masukkan Data Diri Anda</h3>
                         <div class="form-group">
                           <label>Nama</label>
-                          <input type="text" class="form-control" placeholder="Masukkan Nama">
+                          <input type="text" class="form-control" placeholder="Masukkan Nama" required>
                         </div>
                         <div class="form-group">
                           <label class="col-sm-6 col-form-label">Jenis Kelamin</label>
@@ -36,40 +36,94 @@
                         </div>
                         <div class="form-group">
                           <label>Tempat Lahir</label>
-                          <input type="text" class="form-control" placeholder="Masukkan Tempat Lahir">
+                          <input type="text" class="form-control" placeholder="Masukkan Tempat Lahir" required>
                         </div>
                         <div class="form-group">
                           <label>Tanggal Lahir</label>
-                          <input type="date" class="form-control" placeholder="Masukkan Tanggal Lahir">
+                          <input type="date" class="form-control" placeholder="Masukkan Tanggal Lahir" required>
                         </div>
                         <div class="form-group">
                           <label>NIK</label>
-                          <input type="number" class="form-control" placeholder="Masukkan NIK Anda">
+                          <input type="number" class="form-control" placeholder="Masukkan NIK Anda" required>
                         </div>
                         <div class="form-group">
                           <label>No Hp</label>
-                          <input type="number" class="form-control" placeholder="Masukkan Nomor Handphone">
+                          <input type="number" class="form-control" placeholder="Masukkan Nomor Handphone" required>
                         </div>
                         <div class="form-group">
                           <label>Alamat</label>
-                          <textarea class="form-control" rows="5" placeholder="Masukkan Alamat Anda"></textarea>
+                          <textarea class="form-control" rows="5" placeholder="Masukkan Alamat Anda" required></textarea>
                         </div>
                       </section>
 
                       <h3>Jenis Kendaraan</h3>
                       <section>
-                        <h3>Profile</h3>
+                        <h3>A. Penumpang</h3>
                         <div class="form-group">
-                          <label>First name</label>
-                          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter first name">
+                          <div class="col-xs-4">
+                            <label for="ex1">Dewasa</label>
+                          <input type="number" class="form-control" id="dewasa" onkeyup="hitung();" min="0" required>
+                          </div>
                         </div>
                         <div class="form-group">
-                          <label>Last name</label>
-                          <input type="password" class="form-control" placeholder="Last name">
+                          <label>Bayi</label>
+                          <input type="number" class="form-control" id="bayi" onkeyup="hitung();" min="0" required>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h3>B. Kendaraan</h3>
+                        <div class="form-group">
+                          <label>Pilih Jenis Kendaraan</label>
+                          <select name="kendaraan" class="form-control" onchange="harga(this.value)" required>
+                            <option>-Pilih Jenis Kendaraan-</option>
+                            <option value="Golongan I">Golongan I</option>
+                            <option value="Golongan II">Golongan II</option>
+                            <option value="Golongan III">Golongan III</option>
+                            <option value="Golongan IV">Golongan IV</option>
+                            <option value="Golongan V">Golongan V</option>
+                            <option value="Golongan VI">Golongan VI</option>
+                            <option value="Golongan VII">Golongan VII</option>
+                            <option value="Golongan VIII">Golongan VIII</option>
+                            <option value="Golongan IX">Golongan IX</option>
+                          </select>
+                          <small id="keterangan" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group" id="jenis">
+                          <small id="keterangan2" class="form-text text-muted"></small>
                         </div>
                         <div class="form-group">
-                          <label>Profession</label>
-                          <input type="password" class="form-control" placeholder="Profession">
+                          <input type="text" name="biaya" id="biaya">
+                        </div>
+                        <h3>Total Bayar : <span id="bayar"></span></h3>
+                          </div>
+                          <div class="col-md-6">
+                            <h3>Keterangan : </h3>
+                            <ol type="A">
+                              <strong><li>Penumpang</li></strong>
+                              <ol>
+                                <li>Dewasa (Usia > 2 Tahun <strong>Rp18.000</strong>/orang)</li>
+                                <li>Bayi (Usia 0 - 2 Tahun <strong>Rp5.200</strong>/orang)</li>
+                              </ol>
+                              <strong><li>Kendaraan</li></strong>
+                              <ol>
+                                <li>Golongan I (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan II (Sepeda Motor < 500 cc <strong>Rp67.500</strong>/unit)</li>
+                                <li>Golongan III (Sepeda Motor >500 cc <strong>Rp110.750</strong>/unit)</li>
+                                <li>Golongan IV 
+                                  <ol type="a">
+                                    <li>Kendaraan Penumpang (Panjang s/d 5 m <strong>Rp500.755</strong>/unit)</li>
+                                    <li>Kendaraan Barang (Panjang s/d 5 m <strong>Rp468.741</strong>/unit)</li>
+                                  </ol>
+                                </li>
+                                <li>Golongan V (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan VI (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan VII (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan VIII (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                                <li>Golongan IX (Sepeda <strong>Rp29.310</strong>/unit)</li>
+                              </ol>
+                            </ol>
+                          </div> 
                         </div>
                       </section>
 

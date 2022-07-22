@@ -80,15 +80,16 @@
                             <?php if(session()->get('log_in') == true) { ?>
                                 <h4 class="text-white mb-4 animated slideInDown">Selamat datang <?= session()->get('nama'); ?></h4>
                             <?php } ?>
-                            <h1 class="text-white mb-4 animated slideInDown">Awesome Software To Manage Your Business</h1>
-                            <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd dolor sed magna dolor.</p>
-                            <div class="position-relative w-100 mt-3">
+                            <h1 class="text-white mb-4 animated slideInDown">Selamat datang di website kami</h1>
+                            <p class="text-white pb-3 animated slideInDown">Silahkan melakukan pemesanan tiket anda melalui tombol dibawah.</p>
+                            <!-- <div class="position-relative w-100 mt-3">
                                 <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 58px;">
                                 <button type="button" class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2">Free Trail</button>
-                            </div>
+                            </div> -->
+                            <a href="<?= base_url() ?>/pesantiket" class="btn btn-light rounded-pill btn-lg">Pesan Tiket</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid rounded animated zoomIn" src="<?= base_url(); ?>/landingpage/img/hero.jpg" alt="">
+                            <img class="img-fluid rounded animated zoomIn" src="<?= base_url(); ?>/img/awal.png" alt="kapal" width="80%">
                         </div>
                     </div>
                 </div>
