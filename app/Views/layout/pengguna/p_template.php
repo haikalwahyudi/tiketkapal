@@ -28,9 +28,9 @@
         <!-- Navbar / Header -->
         <?= $this->include('/layout/pengguna/p_header'); ?>
         <!-- And Navbar / Header -->
-<div class="content-wrapper">
-        <div class="container">
-            
+        <div class="content-wrapper">
+            <div class="container">
+
 
 
                 <!-- Content -->
@@ -39,7 +39,7 @@
             </div>
         </div>
         <!-- Footer -->
-                <?= $this->include('/layout/pengguna/p_footer'); ?>
+        <?= $this->include('/layout/pengguna/p_footer'); ?>
         <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
@@ -54,7 +54,7 @@
     <script src="<?= base_url(); ?>/template/js/dataTables.select.min.js"></script>
 
     <!-- Plugin js for this page-->
-    <script src="<?= base_url(); ?>/template/vendors/jquery-steps/jquery.steps.min.js"></script>
+    <script src="<?= base_url(); ?>/template/vendors/jquery-steps/jquery.steps.js"></script>
     <script src="<?= base_url(); ?>/template/vendors/jquery-validation/jquery.validate.min.js"></script>
 
     <!-- End plugin js for this page -->
@@ -73,10 +73,15 @@
     <script src="<?= base_url(); ?>/template/js/wizard.js"></script>
     <!-- End custom js for this page-->
     <!-- <script type="text/javascript">
-        $(document).ready(function(){
-            $(.data).DataTable();
-        });
+        $("#example-form").validate({
+            onFinished: function(event, currentIndex) {
+                console.log('s');
+            }
+        })
     </script> -->
+
+
+
 </body>
 
 </html>

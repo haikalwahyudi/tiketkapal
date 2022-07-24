@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -55,9 +55,9 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="#home" class="nav-item nav-link active">Beranda</a>
-                        <a href="#" class="nav-item nav-link">Dashboard</a>
+                        <a href="<?= base_url() ?>/Home" class="nav-item nav-link">Dashboard</a>
                         <a href="<?= base_url() ?>/pesantiket" class="nav-item nav-link">Pesan Tiket</a>
-                        <a href="#" class="nav-item nav-link">Kapal</a>
+                        <!-- <a href="#" class="nav-item nav-link">Kapal</a> -->
                         <!-- <a href="#about" class="nav-item nav-link">About</a> -->
                         <!-- <a href="#overview" class="nav-item nav-link">Overview</a>
                         <a href="#features" class="nav-item nav-link">Features</a>
@@ -65,9 +65,9 @@
                         <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
                         <a href="#contact" class="nav-item nav-link">Kontak</a>
                     </div>
-                    <?php if(session()->get('log_in') == true){ ?>
+                    <?php if (session()->get('log_in') == true) { ?>
                         <a href="<?= base_url(); ?>/Login/logout" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Keluar</a>
-                    <?php }else{ ?>
+                    <?php } else { ?>
                         <a href="<?= base_url(); ?>/Login" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Masuk</a>
                     <?php } ?>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="container">
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <?php if(session()->get('log_in') == true) { ?>
+                            <?php if (session()->get('log_in') == true) { ?>
                                 <h4 class="text-white mb-4 animated slideInDown">Selamat datang <?= session()->get('nama'); ?></h4>
                             <?php } ?>
                             <h1 class="text-white mb-4 animated slideInDown">Selamat datang di website kami</h1>
@@ -86,7 +86,11 @@
                                 <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 58px;">
                                 <button type="button" class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2">Free Trail</button>
                             </div> -->
-                            <a href="<?= base_url() ?>/pesantiket" class="btn btn-light rounded-pill btn-lg">Pesan Tiket</a>
+                            <?php if (session()->get('log_in') == true) { ?>
+                                <a href="<?= base_url() ?>/pesantiket" class="btn btn-light rounded-pill btn-lg">Pesan Tiket</a>
+                            <?php } else { ?>
+                                <a href="<?= base_url() ?>/login" onclick="return confirm('Anda belum login, silahkan login terlebih dahulu')" class="btn btn-light rounded-pill btn-lg">Pesan Tiket</a>
+                            <?php } ?>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid rounded animated zoomIn" src="<?= base_url(); ?>/img/awal.png" alt="kapal" width="80%">
@@ -99,7 +103,7 @@
 
 
         <!-- Feature Start -->
-        <div class="container-xxl py-6">
+        <!-- <div class="container-xxl py-6">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
@@ -125,135 +129,43 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Feature End -->
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-6" id="about">
-            <div class="container">
-                <div class="row g-5 flex-column-reverse flex-lg-row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Manage & Push Your Business To The Next Level</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h5>First Working Process</h5>
-                                <p class="mb-0">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo magna</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h5>24/7 Hours Support</h5>
-                                <p class="mb-0">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo magna</p>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.5s" src="<?= base_url(); ?>/landingpage/img/about.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Overview Start -->
-        <div class="container-xxl bg-light my-6 py-5" id="overview">
-            <div class="container">
-                <div class="row g-5 py-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="<?= base_url(); ?>/landingpage/img/overview-1.jpg">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">01</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">App Integration</h5>
-                        </div>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Fully customizable</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>User friendly interface</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>More effective & poerwfull</p>
-                    </div>
-                </div>
-                <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">02</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">App Customization</h5>
-                        </div>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Fully customizable</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>User friendly interface</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>More effective & poerwfull</p>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="<?= base_url(); ?>/landingpage/img/overview-2.jpg">
-                    </div>
-                </div>
-                <div class="row g-5 py-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="<?= base_url(); ?>/landingpage/img/overview-3.jpg">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">03</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">App Modification</h5>
-                        </div>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Fully customizable</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>User friendly interface</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>More effective & poerwfull</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Overview End -->
 
 
         <!-- Advanced Feature Start -->
         <div class="container-xxl py-6" id="features">
             <div class="container">
                 <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Advanced Features</h1>
-                    <p class="mb-5">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo</p>
+                    <h1 class="mb-3">Data</h1>
+                    <!-- <p class="mb-5">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo</p> -->
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="advanced-feature-item text-center rounded py-5 px-4">
-                            <i class="fa fa-edit fa-3x text-primary mb-4"></i>
-                            <h5 class="mb-3">Fully Customizable</h5>
+                        <div class="advanced-feature-item text-center rounded py-2 px-2">
+                            <img src="<?= base_url(); ?>/img/default.png" alt="kapal" width="100%">
+                            <h5 class="mb-3 mt-3">Fully Customizable</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="advanced-feature-item text-center rounded py-5 px-4">
-                            <i class="fa fa-sync fa-3x text-primary mb-4"></i>
-                            <h5 class="mb-3">App Integration</h5>
+                        <div class="advanced-feature-item text-center rounded py-2 px-2">
+                            <img src="<?= base_url(); ?>/img/default.png" alt="kapal" width="100%">
+                            <h5 class="mb-3 mt-3">App Integration</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="advanced-feature-item text-center rounded py-5 px-4">
-                            <i class="fa fa-laptop fa-3x text-primary mb-4"></i>
-                            <h5 class="mb-3">High Resolution</h5>
+                        <div class="advanced-feature-item text-center rounded py-2 px-2">
+                            <img src="<?= base_url(); ?>/img/default.png" alt="kapal" width="100%">
+                            <h5 class="mb-3 mt-3">High Resolution</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="advanced-feature-item text-center rounded py-5 px-4">
-                            <i class="fa fa-draw-polygon fa-3x text-primary mb-4"></i>
-                            <h5 class="mb-3">Drag And Drop</h5>
+                        <div class="advanced-feature-item text-center rounded py-2 px-2">
+                            <img src="<?= base_url(); ?>/img/default.png" alt="kapal" width="100%">
+                            <h5 class="mb-3 mt-3">Drag And Drop</h5>
                             <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
                         </div>
                     </div>
@@ -263,172 +175,38 @@
         <!-- Advanced Feature End -->
 
 
-        <!-- Facts Start -->
-        <div class="container-xxl bg-primary my-6 py-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                        <i class="fa fa-cogs fa-3x text-white mb-3"></i>
-                        <h1 class="mb-2" data-toggle="counter-up">7264</h1>
-                        <p class="text-white mb-0">Active Install</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                        <i class="fa fa-users fa-3x text-white mb-3"></i>
-                        <h1 class="mb-2" data-toggle="counter-up">6521</h1>
-                        <p class="text-white mb-0">Satisfied Clients</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                        <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                        <h1 class="mb-2" data-toggle="counter-up">729</h1>
-                        <p class="text-white mb-0">Award Wins</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                        <i class="fa fa-quote-left fa-3x text-white mb-3"></i>
-                        <h1 class="mb-2" data-toggle="counter-up">5917</h1>
-                        <p class="text-white mb-0">Clients Reviews</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Facts End -->
-
-
-        <!-- Process Start -->
-        <div class="container-xxl py-6">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="<?= base_url(); ?>/landingpage/img/process.jpg">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <h1 class="mb-4">Three Simple Steps To Start Working With</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
-                        <ul class="process mb-0">
-                            <li>
-                                <span><i class="fa fa-cog"></i></span>
-                                <div>
-                                    <h5>Install the Software</h5>
-                                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span><i class="fa fa-address-card"></i></span>
-                                <div>
-                                    <h5>Setup Your Profile</h5>
-                                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span><i class="fa fa-check"></i></span>
-                                <div>
-                                    <h5>Enjoy The Features</h5>
-                                    <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Process End -->
-
-
-        <!-- Pricing Start -->
-        <div class="container-xxl py-6" id="pricing">
-            <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Pricing Plan</h1>
-                    <p class="mb-5">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-dark p-4">
-                                <h4 class="text-white mt-2">Standard</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">$</span>
-                                    <h1 class="d-inline display-6 text-primary mb-0"> 29.99</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-primary p-4">
-                                <h4 class="text-white mt-2">Professional</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">$</span>
-                                    <h1 class="d-inline display-6 text-dark mb-0"> 49.99</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <a href="" class="btn btn-primary rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-dark p-4">
-                                <h4 class="text-white mt-2">Ultimate</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">$</span>
-                                    <h1 class="d-inline display-6 text-primary mb-0"> 79.99</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pricing End -->
-
-
         <!-- Testimonial Start -->
         <div class="container-xxl py-6" id="testimonial">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Data Data Kapal Di Pelabuhan</h1>
+                    <!-- <p class="mb-5">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo</p> -->
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+
+                    <div class="testimonial-item rounded my-4">
+                        <div class="advanced-feature-item text-center rounded py-2 px-2">
+                            <img src="<?= base_url(); ?>/img/default.png" alt="kapal" width="100%">
+                            <h5 class="mb-3 mt-3">Fully Customizable</h5>
+                            <p class="m-0">lore Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-xxl py-6" id="testimonial">
             <div class="container">
                 <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">What Our Clients Say</h1>
                     <p class="mb-5">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo</p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?= base_url(); ?>/landingpage/img/testimonial-1.jpg" style="width: 65px; height: 65px;">
-                            <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
-                            </div>
+                    <div class="testimonial-item rounded my-4">
+                        <div class="advanced-feature-item text-center rounded py-2 px-2">
+                            <img src="<?= base_url(); ?>/img/default.png" alt="kapal" width="100%">
+                            <h5 class="mb-3 mt-3">Fully Customizable</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded my-4">
@@ -453,7 +231,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Testimonial End -->
 
 
@@ -461,15 +239,14 @@
         <div class="container-xxl py-6" id="contact">
             <div class="container">
                 <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-3">Get In Touch</h1>
-                        <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-3">Hubungi Kami</h1>
                         <div class="d-flex mb-4">
                             <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
                                 <i class="fa fa-phone-alt"></i>
                             </div>
                             <div class="ms-3">
-                                <p class="mb-2">Call Us</p>
+                                <p class="mb-2">Telpon</p>
                                 <h5 class="mb-0">+012 345 6789</h5>
                             </div>
                         </div>
@@ -478,8 +255,8 @@
                                 <i class="fa fa-envelope"></i>
                             </div>
                             <div class="ms-3">
-                                <p class="mb-2">Mail Us</p>
-                                <h5 class="mb-0">info@example.com</h5>
+                                <p class="mb-2">Email</p>
+                                <h5 class="mb-0">info@gmail.com</h5>
                             </div>
                         </div>
                         <div class="d-flex mb-0">
@@ -487,109 +264,24 @@
                                 <i class="fa fa-map-marker-alt"></i>
                             </div>
                             <div class="ms-3">
-                                <p class="mb-2">Our Office</p>
-                                <h5 class="mb-0">123 Street, New York, USA</h5>
+                                <p class="mb-2">Alamat</p>
+                                <h5 class="mb-0">Jln. ....</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Contact End -->
-        
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-body footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link" href="">About</a>
-                        <a class="btn btn-link" href="">Contact</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Conditions</a>
-                        <a class="btn btn-link" href="">Support</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Community<span></span></p>
-                        <a class="btn btn-link" href="">Career</a>
-                        <a class="btn btn-link" href="">Leadership</a>
-                        <a class="btn btn-link" href="">Strategy</a>
-                        <a class="btn btn-link" href="">History</a>
-                        <a class="btn btn-link" href="">Components</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="container px-lg-5">
                 <div class="copyright">
                     <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                            <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">Copyright © <?= date('Y') ?>. Udang <a href="https://anakdesapk.blogspot.com/" target="_blank">Anak Desa</a>
                         </div>
                     </div>
                 </div>

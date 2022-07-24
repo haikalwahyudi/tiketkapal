@@ -9,6 +9,7 @@
             <span class="icon-menu"></span>
         </button>
         <ul class="navbar-nav navbar-nav-right">
+
             <!-- Notification -->
             <!-- <li class="nav-item dropdown">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">

@@ -51,7 +51,7 @@
     </div>
     <!-- container-scroller -->
 
-    
+
     <!-- plugins:js -->
     <script src="<?= base_url(); ?>/template/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->

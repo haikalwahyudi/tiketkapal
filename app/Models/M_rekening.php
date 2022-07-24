@@ -8,15 +8,24 @@ class M_rekening extends Model
 {
 	protected $table = "rekening";
 
-	public function ambilData()
+	public function ambilData($id = false)
 	{
-		return $this->db->table($this->table)->get()->getResult();
+		if ($id === false) {
+			return $this->db->table($this->table)->get()->getResult();
+		} else {
+			return $this->getWhere(['id_pembayaran' => $id]);
+		}
 	}
-	// public function simpan($data)
-	// {
-	// 	$simpan = $this->db->table($this->table);
-	// 	return $simpan->insert($data);
-	// }
+	public function simpan($data)
+	{
+		$simpan = $this->db->table($this->table);
+		return $simpan->insert($data);
+	}
+	public function hapus($id)
+	{
+		$hapus = $this->db->table($this->table);
+		return $hapus->delete(['id_pembayaran' => $id]);
+	}
 	public function ubah($data, $id)
 	{
 		$ubah = $this->db->table($this->table);

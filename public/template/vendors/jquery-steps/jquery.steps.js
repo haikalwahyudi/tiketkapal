@@ -1359,6 +1359,7 @@ $.fn.steps.destroy = function ()
 $.fn.steps.finish = function ()
 {
     finishStep(this, getState(this));
+    // console.log('qqq');
 };
 
 /**
@@ -1936,7 +1937,8 @@ var defaults = $.fn.steps.defaults = {
      * @default function (event, currentIndex) { }
      * @for defaults
      **/
-    onFinished: function (event, currentIndex) { },
+    onFinished: function (event, currentIndex) { 
+    },
 
     /**
      * Fires after async content is loaded. 

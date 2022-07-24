@@ -1,0 +1,28 @@
+ERROR - 2022-07-23 08:39:55 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-07-23 08:39:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\tiketkapal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\tiketkapal\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\tiketkapal\app\Models\M_rekening.php(13): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\tiketkapal\app\Controllers\Rekening.php(19): App\Models\M_rekening->ambilData()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Rekening->index()
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekening))
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-07-23 23:04:55 --> Undefined variable: title
+#0 C:\xampp\htdocs\tiketkapal\app\Views\layout\pengguna\p_template.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\View\View.php(226): CodeIgniter\View\View->render('layout/pengguna...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/pesantiket/v_b...', Array, true)
+#5 C:\xampp\htdocs\tiketkapal\app\Controllers\Pesantiket.php(23): view('/pesantiket/v_b...')
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pesantiket->berhasil()
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesantiket))
+#8 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
