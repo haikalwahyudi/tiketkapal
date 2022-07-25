@@ -55,8 +55,14 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="#home" class="nav-item nav-link active">Beranda</a>
-                        <a href="<?= base_url() ?>/Home" class="nav-item nav-link">Dashboard</a>
-                        <a href="<?= base_url() ?>/pesantiket" class="nav-item nav-link">Pesan Tiket</a>
+                        <?php if (session()->get('log_in') == true) { ?>
+                            <a href="<?= base_url() ?>/Home" class="nav-item nav-link">Dashboard</a>
+                        <?php } ?>
+                        <?php if (session()->get('log_in') == true) { ?>
+                            <a href="<?= base_url() ?>/pesantiket" class="nav-item nav-link">Pesan Tiket</a>
+                        <?php } else { ?>
+                            <a href="<?= base_url() ?>/Login" onclick="return confirm('Anda belum login, silahkan login terlebih dahulu')" class="nav-item nav-link">Pesan Tiket</a>
+                        <?php } ?>
                         <!-- <a href="#" class="nav-item nav-link">Kapal</a> -->
                         <!-- <a href="#about" class="nav-item nav-link">About</a> -->
                         <!-- <a href="#overview" class="nav-item nav-link">Overview</a>
@@ -65,7 +71,11 @@
                         <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
                         <a href="#contact" class="nav-item nav-link">Kontak</a>
                     </div>
-                    <?php if (session()->get('log_in') == true) { ?>
+                    <?php
+
+                    use CodeIgniter\Database\Query;
+
+                    if (session()->get('log_in') == true) { ?>
                         <a href="<?= base_url(); ?>/Login/logout" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Keluar</a>
                     <?php } else { ?>
                         <a href="<?= base_url(); ?>/Login" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Masuk</a>
@@ -184,14 +194,19 @@
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
 
-                    <div class="testimonial-item rounded my-4">
-                        <div class="advanced-feature-item text-center rounded py-2 px-2">
-                            <img src="<?= base_url(); ?>/img/default.png" alt="kapal" width="100%">
-                            <h5 class="mb-3 mt-3">Fully Customizable</h5>
-                            <p class="m-0">lore Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
+                    <?php
+                    $db = \Config\Database::connect();
+                    $query = $db->query("SELECT * FROM kapal")->getResult();
+                    foreach ($query as $kpl) {
+                    ?>
+                        <div class="testimonial-item rounded my-4">
+                            <div class="advanced-feature-item text-center rounded py-2 px-2">
+                                <img src="<?= base_url(); ?>/img/<?= $kpl->gambar; ?>" alt="kapal" width="100%">
+                                <h5 class="mb-3 mt-3"><?= $kpl->nm_kapal; ?></h5>
+                                <p class="m-0"><?= $kpl->deskripsi; ?></p>
+                            </div>
                         </div>
-                    </div>
-
+                    <?php } ?>
                 </div>
             </div>
         </div>

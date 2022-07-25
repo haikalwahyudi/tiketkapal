@@ -19,7 +19,7 @@
                         <div class="card card-tale">
                             <div class="card-body">
                                 <p class="mb-4">Data Kapal</p>
-                                <p class="fs-30 mb-2">10</p>
+                                <p class="fs-30 mb-2"><?= $jkpl; ?></p>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                         <div class="card card-dark-blue">
                             <div class="card-body">
                                 <p class="mb-4">Data Pengguna</p>
-                                <p class="fs-30 mb-2">10</p>
+                                <p class="fs-30 mb-2"><?= $jp; ?></p>
                             </div>
                         </div>
                     </div>

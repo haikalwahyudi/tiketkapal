@@ -227,3 +227,50 @@ CRITICAL - 2022-07-24 20:48:39 --> unlink(img1658713488_208108b2e7b383747aa0.png
 #5 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #7 {main}
+CRITICAL - 2022-07-24 21:13:56 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('v_beranda', Array, true)
+#3 C:\xampp\htdocs\tiketkapal\app\Controllers\Home.php(46): view('v_beranda', Array)
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-07-24 21:20:16 --> Undefined property: stdClass::$nm_kapal
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\laporan\v_dlaporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/admin/laporan/...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Laporan.php(21): view('/admin/laporan/...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-24 21:20:50 --> Undefined property: stdClass::$id_kapal
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\laporan\v_dlaporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/admin/laporan/...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Laporan.php(21): view('/admin/laporan/...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-24 22:17:45 --> Undefined variable: tgl_pemesanan
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\laporan\v_dlaporan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/admin/laporan/...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Laporan.php(21): view('/admin/laporan/...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Laporan->index()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
