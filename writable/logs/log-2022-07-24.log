@@ -129,3 +129,101 @@ CRITICAL - 2022-07-24 11:32:02 --> Invalid file: rekening/v_rekening.php
 #6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #8 {main}
+CRITICAL - 2022-07-24 19:24:51 --> Undefined variable: data
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\v_dpesantiket.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/admin/v_dpesan...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Pesantiket.php(110): view('/admin/v_dpesan...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pesantiket->dtiket()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesantiket))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-24 19:32:49 --> Undefined variable: nm_pemesan
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\v_dpesantiket.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/admin/v_dpesan...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Pesantiket.php(111): view('/admin/v_dpesan...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pesantiket->dtiket()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesantiket))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-24 19:33:41 --> Undefined variable: nm_pemesan
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\v_dpesantiket.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/admin/v_dpesan...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Pesantiket.php(111): view('/admin/v_dpesan...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pesantiket->dtiket()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesantiket))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-24 19:34:35 --> Undefined property: stdClass::$bukti_transfer
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\v_dpesantiket.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/admin/v_dpesan...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Pesantiket.php(111): view('/admin/v_dpesan...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pesantiket->dtiket()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesantiket))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-24 19:46:05 --> Undefined variable: c
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\v_dpesantiket.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('/admin/v_dpesan...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Pesantiket.php(111): view('/admin/v_dpesan...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pesantiket->dtiket()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesantiket))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-24 19:59:02 --> Too few arguments to function App\Controllers\Pesantiket::konfirmasi(), 0 passed in C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Pesantiket->konfirmasi()
+#1 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesantiket))
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-24 20:17:18 --> Invalid file: admin/v_dkapal.php
+#0 C:\xampp\htdocs\tiketkapal\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_dkapal....')
+#1 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('admin/v_dkapal', Array, true)
+#2 C:\xampp\htdocs\tiketkapal\app\Controllers\Kapal.php(21): view('admin/v_dkapal', Array)
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Kapal->index()
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kapal))
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-24 20:28:23 --> Undefined property: stdClass::$deksripsi
+#0 C:\xampp\htdocs\tiketkapal\app\Views\admin\kapal\v_dkapal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\tiketkapal\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tiketkapal\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\tiketkapal\system\Common.php(1089): CodeIgniter\View\View->render('admin/kapal/v_d...', Array, true)
+#4 C:\xampp\htdocs\tiketkapal\app\Controllers\Kapal.php(21): view('admin/kapal/v_d...', Array)
+#5 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Kapal->index()
+#6 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kapal))
+#7 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-07-24 20:48:39 --> unlink(img1658713488_208108b2e7b383747aa0.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img16587...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\tiketkapal\app\Controllers\Kapal.php(74): unlink('img1658713488_2...')
+#2 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(832): App\Controllers\Kapal->hkapal('2')
+#3 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kapal))
+#4 C:\xampp\htdocs\tiketkapal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\tiketkapal\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\tiketkapal\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}

@@ -102,4 +102,27 @@ class Pesantiket extends BaseController
         ];
         return view('/Pesantiket/v_cetaktiket2', $data);
     }
+    public function cetaktiket3($id_pemesanan)
+    {
+        $data = [
+            'data'  => $this->M_pesantiket->ambilData($id_pemesanan)->getRow()
+        ];
+        return view('/admin/v_cetaktiket', $data);
+    }
+    public function dtiket()
+    {
+        $data = [
+            'title' => "Konfirmasi Pemesanan",
+            'data'  => $this->M_pesantiket->ambilData()
+        ];
+        return view('/admin/v_dpesantiket', $data);
+    }
+    public function konfirmasi($id)
+    {
+        $this->M_pesantiket->ubah([
+            'aksi'      => '3'
+        ], $id);
+        session()->setFlashdata('simpan', 'Berhasil dikonfirmasi');
+        return redirect()->to('/Pesantiket/dtiket');
+    }
 }

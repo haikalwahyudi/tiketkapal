@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url(); ?>/error">
+                <a class="nav-link" href="<?= base_url(); ?>/Pesantiket/dtiket">
                     <i class="ti-files menu-icon"></i>
                     <span class="menu-title">Data Pemesanan Tiket</span>
                 </a>
@@ -21,7 +21,7 @@
                 </a>
             </li> -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url(); ?>/error"">
+                <a class="nav-link" href="<?= base_url(); ?>/Kapal"">
                 <i class=" ti-agenda menu-icon"></i>
                     <span class="menu-title">Data Kapal</span>
                 </a>
