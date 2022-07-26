@@ -45,7 +45,7 @@
                                         <td>
                                             <?php if ($c->aksi == 3) { ?>
                                                 <a href="<?= base_url(); ?>/Pesantiket/cetaktiket/<?= $c->id_pemesanan; ?>" class="btn btn-primary btn-icon-text btn-sm">
-                                                    Cetak
+
                                                     <i class="ti-printer btn-icon-prepend"></i>
                                                 </a>
                                             <?php } elseif ($c->aksi == 2) { ?>

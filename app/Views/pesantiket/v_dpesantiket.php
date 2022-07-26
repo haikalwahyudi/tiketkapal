@@ -96,7 +96,7 @@
                     <small id="keterangan2" class="form-text text-muted"></small>
                   </div>
                   <div class="form-group">
-                    <input type="text" name="biaya" id="biaya">
+                    <input type="hidden" name="biaya" id="biaya">
                   </div>
                   <h3>Total Bayar : <span id="bayar"></span></h3>
                 </div>

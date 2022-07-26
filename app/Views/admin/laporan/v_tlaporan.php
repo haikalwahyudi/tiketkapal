@@ -36,7 +36,11 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
+                            <h6>Laporan Tanggal</h6>
+                            <p><?= $tanggal['awal']; ?> - <?= $tanggal['akhir']; ?></p>
+                        </div>
+                        <div class="col-md-6">
                             <a href="<?= base_url(); ?>/Laporan/filter" class="btn btn-primary float-right">
                                 <i class="ti-printer"></i> Cekatk
                             </a>
@@ -59,7 +63,7 @@
                                     <tbody>
                                         <?php
                                         $no = 1;
-                                        foreach ($data as $d) {
+                                        foreach ($caridata as $d) {
                                         ?>
                                             <tr>
                                                 <td><?= $no++; ?></td>

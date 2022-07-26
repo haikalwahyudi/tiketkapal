@@ -38,4 +38,12 @@ class M_pesantiket extends Model
         $ubah->where(['id_pemesanan' => $id]);
         return $ubah->update($data);
     }
+    public function filter($tanggal)
+    {
+        return $this->db->table($this->table)
+            ->join('rekening', 'rekening.id_pembayaran=pesantiket.id_pembayaran')
+            ->where(['tgl_pemesanan >=' => $tanggal['awal']])
+            ->where(['tgl_pemesanan <=' => $tanggal['akhir']])
+            ->get()->getResult();
+    }
 }
